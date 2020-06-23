@@ -1,4 +1,4 @@
-// --- Conexion http IONIC 5 --- //
+//--- Conexion http IONIC 5 ---//
 
 * Definir en app.module.ts el import http y el import donde se realiza la conexion en src/app/app.module.ts
 
