@@ -1,0 +1,38 @@
+// -- Agregar Imagen centre en el Header -- //
+
+* Agregar una imagen en el header svg y centralizar
+
+* En el home.page.html agreamos el ion-header
+
+--- home.page.ts ---
+
+<ion-header >
+  <ion-toolbar>
+    <ion-title>
+    <!-- Imagen del titulo en svg poner atencio al max-width
+      <img style="max-width: 65%;" src="../../assets/imgs/logo.svg">
+    </ion-title>
+<!-- Boton Menu a la derecha puede ir cualquier boton -->
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+--- fin home.page.ts ---
+
+* En el scss declarar ion-tittle
+
+--- home.page.scss ---
+
+ion-title {
+  position: absolute;
+  left: -14px;
+  padding: 0px 89px 60px;
+  width: 109%;
+  height: 100%;
+  text-align: center;
+}
+
+--- fin home.page.scss ---
