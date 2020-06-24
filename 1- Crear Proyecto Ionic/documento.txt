@@ -7,3 +7,4 @@
 5. Integrar Capacitor para dispositivos nativos seleccionamos Y
 6. No ingresamos el login ionic
 7. cd nombre_proyecto ahi dentro se encuentra todo el Proyecto
+8. abrir proyecto modo web.. ionic serve

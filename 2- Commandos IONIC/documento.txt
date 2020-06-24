@@ -1,0 +1,10 @@
+// -- Comando IONIC -- //
+
+* Crear Pagina
+
+ionic create page nombre de la Pagina
+
+* Abrir proyecto modo dev en chrome o firefox
+
+ionic serve
+

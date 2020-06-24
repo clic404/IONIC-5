@@ -1,4 +1,4 @@
-// --- Cambiar Color text Header -- //
+// --- Cambiar Color text Header sin quitar dark theme nativo -- //
 
 * En ionic 5 las variables de color se encuentran o apuntan a otro lugar dentro del proyecto
 * En src/theme/variable.scss cambiar dos lineas para ios y para android
@@ -12,7 +12,7 @@
 
         // Color Header
    // --ion-text-color: #ffffff;
-   --ion-text-color: #eb661e;
+      --ion-text-color: #eb661e;
 
 
    /*
@@ -22,7 +22,7 @@
 
      // Color Header
    // --ion-text-color: #ffffff;
-    --ion-text-color: #eb661e;
+      --ion-text-color: #eb661e;
 
 
     --- fin variables.css ---

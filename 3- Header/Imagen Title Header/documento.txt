@@ -4,6 +4,30 @@
 
 * En el home.page.html agreamos el ion-header
 
+
+*** OPCION 1 ***
+
+* Creamos en src/assets la carpeta imgs dentro de la carpeta ingresamos la imagen svg
+
+--- home.page.html ---
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+  <!-- Llamamos a la img dentro de la ruta-->
+      <img style="max-width: 65%;" src="../../assets/imgs/nombre_imagen.svg">
+    </ion-title> 
+  </ion-toolbar>
+</ion-header>
+
+--- fin home.page.html ---
+
+* Si declaramos los scss universale no agreamos nada al home.page.scss igual dejamos la
+  opcion 2 de encuadre en la vista de la imagen en el home
+
+  *** OPCION 2 ***
+
+
 --- home.page.ts ---
 
 <ion-header >
