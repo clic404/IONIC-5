@@ -2,7 +2,7 @@
 
 * Crear Pagina
 
-ionic create page nombre de la Pagina
+ionic generate page nombre de la Pagina
 
 * Abrir proyecto modo dev en chrome o firefox
 
