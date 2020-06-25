@@ -25,7 +25,7 @@ NgModule({
 
 
   * Dentro de src Crear un carpeta system una api y un archivo.ts quedando src/system/api/api.ts
-  * Nos disponemos a realcionae el api.ts
+* Nos disponemos a relacionar el api.ts
 
   --- api.ts ---
 

@@ -1,0 +1,6 @@
+//-- Registro IONIC 5 Slim Framework --//
+
+* Realizaremos el registro de nuestra app hacia nuestro servidor con slim framework
+
+* Creamos la pagina register
+
