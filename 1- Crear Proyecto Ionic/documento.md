@@ -1,10 +1,10 @@
-// -- Crear Proyecto Ionic 5 -- //
+### //-- Crear Proyecto Ionic 5 --//
 
-1. Abrir el terminal e ingresar
-2. ionic start nombre_proyecto
-3. Muestra dos opsiones angular o react en mi caso selecciono angular
-4. Tipo de preferencia de template en mi caso un poyecto en blanco --- blank
-5. Integrar Capacitor para dispositivos nativos seleccionamos Y
-6. No ingresamos el login ionic
-7. cd nombre_proyecto ahi dentro se encuentra todo el Proyecto
-8. abrir proyecto modo web.. ionic serve
+        Abrir el terminal e ingresar
+        ionic start nombre_proyecto
+        Muestra dos opsiones angular o react en mi caso selecciono angular
+        Tipo de preferencia de template en mi caso un poyecto en blanco --- blank
+        Integrar Capacitor para dispositivos nativos seleccionamos Y
+        No ingresamos el login ionic
+        cd nombre_proyecto ahi dentro se encuentra todo el Proyecto
+        abrir proyecto modo web.. ionic serve

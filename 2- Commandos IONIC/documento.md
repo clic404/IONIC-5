@@ -1,27 +1,27 @@
-// -- Comando IONIC -- //
+### // -- Comando IONIC -- //
 
-* Crear Pagina
+### Crear Pagina
 
-ionic generate page nombre de la Pagina
+        ionic generate page nombre de la Pagina
 
-* Abrir proyecto modo dev en chrome o firefox
+### Abrir proyecto modo dev en chrome o firefox
 
-ionic serve
+        ionic serve
 
-* Crear splah Icons Capacitor
+### Crear splah Icons Capacitor
 
-npm install cordova-plugin-splashscreen
-npm install @ionic-native/splash-screen
-ionic cap sync
+        npm install cordova-plugin-splashscreen
+        npm install @ionic-native/splash-screen
+        ionic cap sync
 
-* Crear splah Icons cordova
+### Crear splah Icons cordova
 
-npm install cordova-res
+        npm install cordova-res
 
-ionic cordova resources
+        ionic cordova resources
 
-* Emular Android ( Si no tiene los splash crea automaticamente oara ios y android)
+### Emular Android ( Si no tiene los splash crea automaticamente oara ios y android)
 
-ionic cordova emulate android
+        ionic cordova emulate android
 
 
