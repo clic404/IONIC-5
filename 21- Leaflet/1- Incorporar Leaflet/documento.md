@@ -6,6 +6,7 @@
 
 
             npm install leaflet --save
+            npm install @types/leaflet --save
     
     Dentro del src/global.scss ingresamos el import como parte del estilo al final
 
