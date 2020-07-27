@@ -37,4 +37,16 @@
             }
     Este modal cumple como otra page individual.
 
+    Importante declarar en app.module.ts, lo que provee de todos los componentes para trabajar con array y ngFor.
+
+### app.module.ts
+
+            // Agregar Import en donde se encuentra la page module
+            import { ModalPage } from '../app/home/modal.page';
+            
+            // En declarations declarar moduloe
+            @NgModule({
+            declarations: [AppComponent, MapModalPage],
+            ....
+
 
