@@ -8,7 +8,7 @@
 
     Si queremos dar soporte para IOS, al momento de instalar el plugin debemos describir la razón para acceder a estos recursos así:
 
-                ionic cordova plugin add cordova-plugin-camera --variable CAMERA_USAGE_DESCRIPTION="the app need the camera" --variable PHOTOLIBRARY_USAGE_DESCRIPTION="the app need the photolibrary"
+                ionic cordova plugin add cordova-plugin-camera --variable CAMERA_USAGE_DESCRIPTION="the app need the camera" --variable PHOTOLIBRARY_USAGE_DESCRIPTION="the app need the photolibrary" 
     
 
     Agregar Permisos ejemplo en 0- Tips 2- Permisos IOS
