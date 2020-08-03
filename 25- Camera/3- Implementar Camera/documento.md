@@ -17,30 +17,33 @@
             styleUrls: ['home.page.scss'],
             })
             export class HomePage {
+            // imagen Temporal
             ImgTemporal: string;
-
+            // Otions de la imagen
+            options: CameraOptions = {
+                quality: 20,
+                destinationType: this.camera.DestinationType.DATA_URL,
+                encodingType: this.camera.EncodingType.JPEG,
+                mediaType: this.camera.MediaType.PICTURE,
+                correctOrientation: true,
+                saveToPhotoAlbum: false
+            }
             //Agregamos al constuctor
             constructor(private camera: Camera) {}
 
             //Funcion camera
 
-            camara() {
-            const options: CameraOptions = {
-            quality: 50,
-            destinationType: this.camera.DestinationType.FILE_URI,
-            encodingType: this.camera.EncodingType.JPEG,
-            mediaType: this.camera.MediaType.PICTURE,
-            correctOrientation: true,
-            sourceType: this.camera.PictureSourceType.CAMERA
-            };
-
-            this.camera.getPicture(options).then( ( imageData ) => {
-            let base64Image = 'data:image/jpeg;base64,' + imageData;
-            this.ImgTemporal = base64Image;
-            }, (err) => {
-            // Handle error
-            });
-
+           camara() {
+                this.camera.getPicture(this.options).then((imageData) => {
+                // imageData is either a base64 encoded string or a file URI
+                // If it's base64 (DATA_URL):
+                let base64Image = 'data:image/jpeg;base64,' + imageData;
+                this.ImgTemporal = base64Image;
+                window.localStorage.setItem('ImgTemporal', this.ImgTemporal);
+                }, (err) => {
+                console.log(err);
+                // Handle error
+                });
             }
             }
 
