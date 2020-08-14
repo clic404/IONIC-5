@@ -56,3 +56,5 @@
     9- Seleccionamos signature version v1 y v2
 
     Para subir a la tienda debe realizarlo en bundle con formato .aab
+
+    
