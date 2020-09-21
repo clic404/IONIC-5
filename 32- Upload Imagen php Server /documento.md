@@ -169,6 +169,33 @@
             RewriteCond %{REQUEST_FILENAME} !-f
             RewriteRule ^(.*)$ index.php [QSA,L]
 
+    En otro servidores la configuracion puede ser esta
+
+            <ifModule mod_rewrite.c>
+
+            RewriteEngine On
+            RewriteCond %{REQUEST_FILENAME} !-f
+            RewriteRule ^(.*)$ index.php/$1 [NC,QSA,L]
+            </ifModule>
+
+    Dentro del php declarar el header
+
+                if (isset($_SERVER['HTTP_ORIGIN'])) {
+                header("Access-Control-Allow-Origin: {$_SERVER['HTTP_ORIGIN']}");
+                header('Access-Control-Allow-Credentials: true');
+                header('Access-Control-Max-Age: 86400');    // cache for 1 day
+            }
+
+            if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
+
+                if (isset($_SERVER['HTTP_ACCESS_CONTROL_REQUEST_METHOD']))
+                    header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS");         
+
+                if (isset($_SERVER['HTTP_ACCESS_CONTROL_REQUEST_HEADERS']))
+                header("Access-Control-Allow-Headers: {$_SERVER['HTTP_ACCESS_CONTROL_REQUEST_HEADERS']}");
+            }
+
+    Declarar permisos 777 en las carpetas
 
 
 
