@@ -1,0 +1,7 @@
+{
+  "name": "tocbee",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
