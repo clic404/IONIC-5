@@ -1,5 +1,7 @@
 # IONIC 5
 
+![](https://avatars.githubusercontent.com/u/67119593?v=4)
+
 Bitácora IONIC 5 en apoyo a la comunidad Developers.
 
 
@@ -12,5 +14,5 @@ Bitácora IONIC 5 en apoyo a la comunidad Developers.
     -- [2-1 - Plantilla Login & Register](https://github.com/sixlan/IONIC-5/blob/master/02-Login%20%26%20Register/2-1-Plantillas%20Login%20%26%20Register/documento.md)
 
 
-
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Q5Q04LT28)
 
