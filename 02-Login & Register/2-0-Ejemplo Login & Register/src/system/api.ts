@@ -5,7 +5,7 @@ export class ApiConexion {
 
 //########### RUTA CONEXION ###########//
 
-RutaUrl: string = 'https://tocbee.com/api/';
+RutaUrl: string = 'https://name_web.com/api/';
 
     constructor(public http: HttpClient) { }
   

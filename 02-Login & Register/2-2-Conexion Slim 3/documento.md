@@ -18,7 +18,7 @@ export class ApiConexion {
 
 //########### RUTA CONEXION ###########//
 
-RutaUrl: string = 'https://tocbee.com/api/';
+RutaUrl: string = 'https://NAME_WEB.com/api/';
 
     constructor(public http: HttpClient) { }
   
@@ -56,12 +56,13 @@ import { ApiConexion } from '../../system/api';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
-
+//Declaramos el post
   postData = {"email":""};
+// Recuperamos los datos
   userData = {"email":"", "password":""};
 
   constructor(public auth: ApiConexion) { 
-
+//Llamamos a la funcion login a futuro se realiza desde boton
     this.login();
   }
   
