@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+//Agregamos la conexion System Api
+import { ApiConexion } from '../../system/api';
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPage implements OnInit {
 
-  constructor() { }
+  postData = {"email":""};
+  userData = {"email":"", "password":""};
 
-  ngOnInit() {
+  constructor(public auth: ApiConexion) { 
+
+    this.login();
   }
+  
+  ngOnInit() {}
 
+  //################### Funcion Login ################################# //
+async login(){
+
+  this.auth.postData(this.userData, "login").then(async (result) =>{
+    
+    console.log(result);
+     
+     });
+  }
 }
