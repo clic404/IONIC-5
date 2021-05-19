@@ -81,12 +81,6 @@ async login(){
 
 - Declaramos en src/app.module.ts ApiConexion y Http siendo la conexion que realizaremos
 
-### app.module.ts
-
-```sh
-ionic generate
-```
-
 
 - Declaramos en src/app.module.ts ApiConexion y Http siendo la conexion que realizaremos
 
@@ -108,4 +102,17 @@ import { HttpClientModule } from '@angular/common/http';
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+```
+
+- Cambiamos la ruta para que inicie nuestra app en login y no en home por el momento
+
+### app-routing.module.ts
+
+```sh
+//Modificamos la linea siguiente
+path: '',
+    //redirectTo: 'home',
+    redirectTo: 'login',
+    pathMatch: 'full'
+
 ```
